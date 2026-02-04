@@ -375,3 +375,55 @@ footer {
         transform: translateY(-15px);
     }
 }
+/* Payment Improvements */
+.payment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.payment-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.payment-right {
+    flex: 0 0 150px;
+    text-align: center;
+}
+
+.qr-code-img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+    border: 2px solid var(--accent-pink);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.qr-code-img:hover {
+    transform: scale(1.05);
+}
+
+.micro-text {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 5px;
+}
+
+.security-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+

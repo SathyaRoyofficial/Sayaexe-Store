@@ -64,39 +64,57 @@
                     <div class="glass-panel" style="padding: 30px; background: rgba(0,0,0,0.3);">
                         <h2 style="text-align: center;">💳 Get It Now</h2>
 
-                        <div class="payment-section" style="margin-top: 20px; padding: 0;">
-                            <h3>Step 1: Make Payment</h3>
-                            <p>Pay <strong>₹21</strong> using any UPI App</p>
+                        <!-- Step 1: Payment -->
+                        <div class="payment-section" style="margin-top: 20px; padding: 0; text-align: left;">
+                            <h3 style="text-align: center; margin-bottom: 20px;">Step 1: Make Payment</h3>
 
-                            <div class="upi-box">
-                                mummidisathya@okhdfcbank
+                            <div class="payment-grid">
+                                <!-- Left: UPI & Button -->
+                                <div class="payment-left">
+                                    <p style="font-size: 0.9rem;">Pay <strong>₹21</strong> to unlock customized love
+                                        template</p>
+                                    <div class="upi-box"
+                                        style="margin: 10px 0; width: 100%; text-align: center; font-size: 0.9rem;">
+                                        mummidisathya@okhdfcbank
+                                    </div>
+                                    <a href="upi://pay?pa=mummidisathya@okhdfcbank&am=21&tn=Bubu Dudu - Love Proposal"
+                                        class="glass-btn"
+                                        style="background: #28a745; border-color: #28a745; width: 100%; text-align: center; margin-top: 10px;">💰
+                                        Pay ₹21</a>
+                                </div>
+
+                                <!-- Right: QR Code -->
+                                <div class="payment-right">
+                                    <p class="micro-text">OR Scan QR Code</p>
+                                    <a href="assets/images/qr-code.png" target="_blank">
+                                        <img src="assets/images/qr-code.png" alt="Payment QR Code" class="qr-code-img">
+                                    </a>
+                                    <p class="micro-text">PhonePe / GPay / Paytm</p>
+                                </div>
                             </div>
-                            <p style="font-size: 0.8rem; opacity: 0.8; margin-bottom: 20px;">
-                                <a href="upi://pay?pa=mummidisathya@okhdfcbank&am=21&tn=Bubu Dudu - Love Proposal"
-                                    style="text-decoration: underline;">Click to Pay (Mobile)</a>
-                            </p>
-                            <a href="upi://pay?pa=mummidisathya@okhdfcbank&am=21&tn=Bubu Dudu - Love Proposal"
-                                class="glass-btn"
-                                style="background: #28a745; border-color: #28a745; width: 100%; text-align: center;">💰
-                                Pay ₹21</a>
                         </div>
 
                         <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 30px 0;">
 
-                        <div id="upload-section">
+                        <!-- Step 2: Upload Proof -->
+                        <div id="upload-section" style="text-align: center;">
                             <h3>Step 2: Upload Proof</h3>
-                            <p style="margin-bottom: 20px; font-size: 0.9rem;">Fill the form below to receive your
-                                website link.</p>
+                            <p style="margin-bottom: 20px; font-size: 0.9rem;">After payment, submit your details to
+                                receive your website.</p>
 
-                            <!-- GOOGLE FORM EMBED START -->
-                            <iframe
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSe5KnvavuhFztLCCTvCzcONKz7rPFg28En7kYH5c72JVWIduw/viewform?embedded=true"
-                                width="100%" height="1270" frameborder="0" marginheight="0" marginwidth="0"
-                                style="border-radius: 10px; background: rgba(255,255,255,0.9);">Loading…</iframe>
-                            <!-- GOOGLE FORM EMBED END -->
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5KnvavuhFztLCCTvCzcONKz7rPFg28En7kYH5c72JVWIduw/viewform"
+                                target="_blank" class="glass-btn"
+                                style="width: 100%; text-align: center; animation: pulse 2s infinite;">
+                                👉 Upload Payment Proof
+                            </a>
 
-                            <!-- Example of what it looks like when embedded, uncomment to test layout -->
-                            <!-- <iframe src="https://docs.google.com/forms/d/e/..." width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+                            <p class="micro-text" style="margin-top: 15px;">
+                                You will be redirected to a secure Google Form to upload your screenshot and details.
+                            </p>
+
+                            <div class="security-badge">
+                                🔒 Your details are safe & used only for verification.
+                            </div>
                         </div>
                     </div>
                 </div>
